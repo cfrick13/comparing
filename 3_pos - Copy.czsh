@@ -28,7 +28,7 @@
   <FocusSurfaceOutlierExpansionDegree>1</FocusSurfaceOutlierExpansionDegree>
   <FocusSurfaceOutlierThresholdSigma>2.75</FocusSurfaceOutlierThresholdSigma>
   <UseDefaultSurfaceFit>true</UseDefaultSurfaceFit>
-  <UsedSurfaceFitTypeName></UsedSurfaceFitTypeName>
+  <UsedSurfaceFitTypeName />
   <DelayAfterStageMove>0</DelayAfterStageMove>
   <OnlineStitchingParameter>
     <UseFocusReferenceChannel>true</UseFocusReferenceChannel>
@@ -41,26 +41,27 @@
   </AllowedScanArea>
   <TileRegions />
   <SingleTileRegions>
-    <SingleTileRegion Name="P1" Id="637196375983588696">
+    </SingleTileRegions>
+  <SingleTileRegionArrays>
+    <SingleTileRegion Id="637196375983588696" Name="P1">
       <X>16268.801</X>
       <Y>15080.149</Y>
       <Z>9909.396</Z>
       <IsUsedForAcquisition>true</IsUsedForAcquisition>
     </SingleTileRegion>
-    <SingleTileRegion Name="P2" Id="637196376003130651">
+    <SingleTileRegion Id="637196376003130651" Name="P2">
       <X>17036.015</X>
       <Y>15080.149</Y>
       <Z>9909.396</Z>
       <IsUsedForAcquisition>true</IsUsedForAcquisition>
     </SingleTileRegion>
-    <SingleTileRegion Name="P3" Id="637196376028243163">
+    <SingleTileRegion Id="637196376028243163" Name="P3">
       <X>18038.033</X>
       <Y>15080.149</Y>
       <Z>9909.396</Z>
       <IsUsedForAcquisition>true</IsUsedForAcquisition>
     </SingleTileRegion>
-  </SingleTileRegions>
-  <SingleTileRegionArrays />
+  </SingleTileRegionArrays>
   <Template Name="CellVis96">
     <AnchorPoint>-5887.063,-5914.973</AnchorPoint>
     <BoundsSize>127600,85750</BoundsSize>
@@ -91,9 +92,9 @@
     <BottomOffsetMeasured>NaN</BottomOffsetMeasured>
     <BottomRefractiveIndex>1.52</BottomRefractiveIndex>
     <InsertType>Default</InsertType>
-    <PartOfInsertName></PartOfInsertName>
+    <PartOfInsertName />
     <BottomColor>Unknown</BottomColor>
-    <UsageHints></UsageHints>
+    <UsageHints />
     <BottomDetectionShape>A1</BottomDetectionShape>
     <SupportPoints />
   </Template>
