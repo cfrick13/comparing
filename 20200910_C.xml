@@ -38,7 +38,7 @@
    <LoopDefinitions/>
    <ExperimentBlocks>
     <AcquisitionBlock IsActivated="true" BlockReference="636101763924038048">
-     <RunMode>ComponentUpdateEnabled,StateUpdateEnabled,LowLevelProtocolCreationEnabled,HighLevelProtocolCreationEnabled,SoftwareTriggeredEnabled</RunMode>
+     <RunMode>ComponentUpdateEnabled,StateUpdateEnabled,LowLevelProtocolCreationEnabled,HighLevelProtocolCreationEnabled</RunMode>
      <SubDimensionSetups>
       <RegionsSetup IsActivated="true">
        <SampleHolder>
@@ -86,7 +86,7 @@
          <SingleTileRegion Name="P1" Id="637353607226417922">
           <X>23023.711</X>
           <Y>32643.278</Y>
-          <Z>9477.461</Z>
+          <Z>9470.463</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="0"/>
@@ -95,7 +95,7 @@
          <SingleTileRegion Name="P2" Id="637353607410807923">
           <X>23233.586</X>
           <Y>32428.944</Y>
-          <Z>9478.048</Z>
+          <Z>9472.197</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="0"/>
@@ -104,7 +104,7 @@
          <SingleTileRegion Name="P3" Id="637353607518477924">
           <X>22790.759</X>
           <Y>32715.939</Y>
-          <Z>9477.508</Z>
+          <Z>9470.52</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="0"/>
@@ -113,7 +113,7 @@
          <SingleTileRegion Name="P4" Id="637353607674147925">
           <X>22371.868</X>
           <Y>31974.507</Y>
-          <Z>9474.707</Z>
+          <Z>9469.476</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="-0.667"/>
@@ -122,7 +122,7 @@
          <SingleTileRegion Name="P5" Id="637353607742547926">
           <X>22265.362</X>
           <Y>31801.199</Y>
-          <Z>9477.343</Z>
+          <Z>9469.322</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="-0.505"/>
@@ -537,13 +537,13 @@
              <DelayAfterFocusMove>0</DelayAfterFocusMove>
              <First>
               <Distance>
-               <Value>0.0094660599999999984</Value>
+               <Value>0.00946118</Value>
                <DefaultUnitFormat>um</DefaultUnitFormat>
               </Distance>
              </First>
              <Last>
               <Distance>
-               <Value>0.0094846200000000009</Value>
+               <Value>0.0094797399999999987</Value>
                <DefaultUnitFormat>um</DefaultUnitFormat>
               </Distance>
              </Last>
@@ -2044,8 +2044,8 @@
     <AnalogOut1 Status="Valid">0</AnalogOut1>
     <AnalogOut2 Status="Valid">0</AnalogOut2>
     <AnalogOut3 Status="Valid">0</AnalogOut3>
-    <AnalogIn1 Status="Valid" IsReadOnly="true">0.05981536583505</AnalogIn1>
-    <AnalogIn2 Status="Valid" IsReadOnly="true">0.028686961165789</AnalogIn2>
+    <AnalogIn1 Status="Valid" IsReadOnly="true">0.069581139848936</AnalogIn1>
+    <AnalogIn2 Status="Valid" IsReadOnly="true">0.020141908903639</AnalogIn2>
     <AnalogIn3 Status="Valid" IsReadOnly="true">0</AnalogIn3>
     <AnalogIn4 Status="Valid" IsReadOnly="true">0</AnalogIn4>
    </ParameterCollection>
@@ -2054,14 +2054,14 @@
     <IsStabilizingPeriodically Status="Valid">false</IsStabilizingPeriodically>
     <Status Status="Valid">Standby</Status>
     <IsInitialized Status="Valid">true</IsInitialized>
-    <DefiniteFocusSignalQuality Status="Valid">87</DefiniteFocusSignalQuality>
+    <DefiniteFocusSignalQuality Status="Valid">80</DefiniteFocusSignalQuality>
     <DefiniteFocusPositionOffset Status="Valid">NaN</DefiniteFocusPositionOffset>
     <DefiniteFocusOperationMode Status="Valid">Fast</DefiniteFocusOperationMode>
     <ObjectiveSuitability Status="Valid">Suitable</ObjectiveSuitability>
     <IsStabilizingInLocateMode Status="Valid">false</IsStabilizingInLocateMode>
     <DefiniteFocusResult Status="Valid">Success</DefiniteFocusResult>
     <DefiniteFocusError Status="Valid">NoError</DefiniteFocusError>
-    <DefiniteFocusPosition Status="Valid">9475.545</DefiniteFocusPosition>
+    <DefiniteFocusPosition Status="Valid">9468.981</DefiniteFocusPosition>
    </ParameterCollection>
    <ParameterCollection Id="MTBCameraAdapter_MTBSideportChanger_Left">
     <TheoreticalTotalMagnification Status="Valid">100</TheoreticalTotalMagnification>
@@ -2093,8 +2093,8 @@
     <TotalAperture Status="Valid">1.25</TotalAperture>
    </ParameterCollection>
    <ParameterCollection Id="MTBFocus">
-    <Position Status="Valid" Unit="&#181;m">9477.343</Position>
-    <MeasurementPosition Status="Valid">-17.886</MeasurementPosition>
+    <Position Status="Valid" Unit="&#181;m">9470.463</Position>
+    <MeasurementPosition Status="Valid">-24.766</MeasurementPosition>
     <IsPrecise Status="Valid">false</IsPrecise>
     <AxisSetPositionMode Status="Valid">Default</AxisSetPositionMode>
     <Speed Status="Valid">0</Speed>
@@ -2132,8 +2132,8 @@
     <PositionName Status="Valid">Aquila.SideportElement_100%L</PositionName>
    </ParameterCollection>
    <ParameterCollection Id="MTBStageAxisX">
-    <Position Status="Valid" Unit="&#181;m">22265.362</Position>
-    <MeasurementPosition Status="Valid">-28758.69</MeasurementPosition>
+    <Position Status="Valid" Unit="&#181;m">23023.711</Position>
+    <MeasurementPosition Status="Valid">-28000.341</MeasurementPosition>
     <IsPrecise Status="Valid">false</IsPrecise>
     <AxisSetPositionMode Status="Valid">Default</AxisSetPositionMode>
     <Speed Status="Valid">0</Speed>
@@ -2147,8 +2147,8 @@
     <AxisCalibrationMode Status="Valid">AutomaticallyCalibrated</AxisCalibrationMode>
    </ParameterCollection>
    <ParameterCollection Id="MTBStageAxisY">
-    <Position Status="Valid" Unit="&#181;m">31801.199</Position>
-    <MeasurementPosition Status="Valid">-120.773</MeasurementPosition>
+    <Position Status="Valid" Unit="&#181;m">32643.278</Position>
+    <MeasurementPosition Status="Valid">721.306</MeasurementPosition>
     <IsPrecise Status="Valid">false</IsPrecise>
     <AxisSetPositionMode Status="Valid">Default</AxisSetPositionMode>
     <Speed Status="Valid">0</Speed>
@@ -3776,7 +3776,7 @@
     <Version>2.3.69.1018</Version>
    </Application>
    <Document>
-    <CreationDate>2020-09-10T13:25:17.9195762-07:00</CreationDate>
+    <CreationDate>2020-09-10T13:47:41.2375762-07:00</CreationDate>
     <UserName>caroline.hookway</UserName>
    </Document>
    <Image>
@@ -3788,7 +3788,7 @@
     <SizeM>1</SizeM>
     <OriginalCompressionMethod>Uncompressed</OriginalCompressionMethod>
     <OriginalEncodingQuality>100</OriginalEncodingQuality>
-    <AcquisitionDateAndTime>2020-09-10T20:25:17.8835762Z</AcquisitionDateAndTime>
+    <AcquisitionDateAndTime>2020-09-10T20:47:41.2015762Z</AcquisitionDateAndTime>
     <SizeC>2</SizeC>
     <SizeZ>65</SizeZ>
     <ComponentBitCount>16</ComponentBitCount>
@@ -3872,7 +3872,7 @@
       </Track>
      </Tracks>
      <T>
-      <StartTime>2020-09-10T20:25:17.8835762Z</StartTime>
+      <StartTime>2020-09-10T20:47:41.2015762Z</StartTime>
       <Positions>
        <BinaryList>
         <AttachmentName>TimeStamps</AttachmentName>
@@ -4037,7 +4037,7 @@
     <TimelineTrack Name="IncubationRecording Track" Id="Track:1">
      <TimelineElements>
       <TimelineElement Id="1">
-       <Time>2020-09-10T20:25:17.9205762Z</Time>
+       <Time>2020-09-10T20:47:41.2385762Z</Time>
        <Duration>0.0000</Duration>
        <EventInformation>
         <IncubationRecording>
@@ -4093,7 +4093,7 @@
     <CameraName>Camera 1 (Back)</CameraName>
     <CameraAdapterMagnification>1.2</CameraAdapterMagnification>
     <CameraPixelDistance>13,13</CameraPixelDistance>
-    <CreationDateTime>09/10/2020 20:25:18</CreationDateTime>
+    <CreationDateTime>09/10/2020 20:47:41</CreationDateTime>
    </AutoScaling>
    <Items>
     <Distance Id="X">
@@ -4113,8 +4113,8 @@
   <DisplaySetting>
    <Channels>
     <Channel Id="Channel:0" Name="Bright_2">
-     <Low>0.054556623854773029</Low>
-     <High>0.077045662735071657</High>
+     <Low>0.061203507160564226</Low>
+     <High>0.100880076322924</High>
      <BitCountRange>16</BitCountRange>
      <PixelType>Gray16</PixelType>
      <DyeName>TL Brightfield</DyeName>
@@ -4124,8 +4124,8 @@
      <OriginalColor>#FFFFFFFF</OriginalColor>
     </Channel>
     <Channel Id="Channel:1" Name="EGFP">
-     <Low>0.0059856933382582255</Low>
-     <High>0.014651760631142669</High>
+     <Low>0.005966031971442339</Low>
+     <High>0.010920810303851751</High>
      <BitCountRange>16</BitCountRange>
      <PixelType>Gray16</PixelType>
      <DyeName>EGFP</DyeName>
