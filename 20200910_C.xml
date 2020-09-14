@@ -38,7 +38,7 @@
    <LoopDefinitions/>
    <ExperimentBlocks>
     <AcquisitionBlock IsActivated="true" BlockReference="636101763924038048">
-     <RunMode>ComponentUpdateEnabled,StateUpdateEnabled,LowLevelProtocolCreationEnabled,HighLevelProtocolCreationEnabled</RunMode>
+     <RunMode>ComponentUpdateEnabled,StateUpdateEnabled,LowLevelProtocolCreationEnabled,HighLevelProtocolCreationEnabled,SoftwareTriggeredEnabled</RunMode>
      <SubDimensionSetups>
       <RegionsSetup IsActivated="true">
        <SampleHolder>
@@ -86,7 +86,7 @@
          <SingleTileRegion Name="P1" Id="637353607226417922">
           <X>23023.711</X>
           <Y>32643.278</Y>
-          <Z>9470.363</Z>
+          <Z>9470.078</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="0"/>
@@ -95,7 +95,7 @@
          <SingleTileRegion Name="P2" Id="637353607410807923">
           <X>23233.586</X>
           <Y>32428.944</Y>
-          <Z>9473.31</Z>
+          <Z>9471.282</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="0"/>
@@ -104,7 +104,7 @@
          <SingleTileRegion Name="P3" Id="637353607518477924">
           <X>22790.759</X>
           <Y>32715.939</Y>
-          <Z>9469.921</Z>
+          <Z>9469.449</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="0"/>
@@ -113,7 +113,7 @@
          <SingleTileRegion Name="P4" Id="637353607674147925">
           <X>22371.868</X>
           <Y>31974.507</Y>
-          <Z>9469.206</Z>
+          <Z>9468.193</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="-0.667"/>
@@ -122,7 +122,7 @@
          <SingleTileRegion Name="P5" Id="637353607742547926">
           <X>22265.362</X>
           <Y>31801.199</Y>
-          <Z>9469.174</Z>
+          <Z>9468.193</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="-0.505"/>
@@ -222,13 +222,13 @@
            <DelayAfterFocusMove>0</DelayAfterFocusMove>
            <First>
             <Distance>
-             <Value>0.00946118</Value>
+             <Value>0.00946622</Value>
              <DefaultUnitFormat>um</DefaultUnitFormat>
             </Distance>
            </First>
            <Last>
             <Distance>
-             <Value>0.0094797399999999987</Value>
+             <Value>0.00948478</Value>
              <DefaultUnitFormat>um</DefaultUnitFormat>
             </Distance>
            </Last>
@@ -771,7 +771,7 @@
       <FocusSetup IsActivated="true">
        <RepetitionSettingsMode>Expert</RepetitionSettingsMode>
        <FocusStrategy IsActivated="true">
-        <StrategyMode>None</StrategyMode>
+        <StrategyMode>DefiniteFocus</StrategyMode>
         <ReferenceChannelId>636970957172294743</ReferenceChannelId>
         <IsFocussingOnAllTracks>false</IsFocussingOnAllTracks>
         <IsFocussingBeforeAcquisition>true</IsFocussingBeforeAcquisition>
@@ -779,7 +779,7 @@
         <UseZPositionFromTilesSetup>true</UseZPositionFromTilesSetup>
         <ExecutionInTileRegionMode>FirstTileOfRegion</ExecutionInTileRegionMode>
         <SupportPointsMode>FixedZPosition</SupportPointsMode>
-        <FocusZStackMode>CurrentZ</FocusZStackMode>
+        <FocusZStackMode>FixedZ</FocusZStackMode>
         <WaitPositionMode>CenterOfFirstRegion</WaitPositionMode>
         <WaitPositionX>0</WaitPositionX>
         <WaitPositionY>0</WaitPositionY>
@@ -797,7 +797,7 @@
          <SubInterval>1</SubInterval>
         </TimeSeriesIntervalInfo>
         <RegionsIntervalInfo>
-         <IsActivated>false</IsActivated>
+         <IsActivated>true</IsActivated>
          <IsMainIntervalEnabled>true</IsMainIntervalEnabled>
          <IsSubIntervalEnabled>false</IsSubIntervalEnabled>
          <MainInterval>1</MainInterval>
@@ -2044,8 +2044,8 @@
     <AnalogOut1 Status="Valid">0</AnalogOut1>
     <AnalogOut2 Status="Valid">0</AnalogOut2>
     <AnalogOut3 Status="Valid">0</AnalogOut3>
-    <AnalogIn1 Status="Valid" IsReadOnly="true">0.021972991531243</AnalogIn1>
-    <AnalogIn2 Status="Valid" IsReadOnly="true">0.00061036087586786</AnalogIn2>
+    <AnalogIn1 Status="Valid" IsReadOnly="true">0.044556343938354</AnalogIn1>
+    <AnalogIn2 Status="Valid" IsReadOnly="true">0.0097657740138857</AnalogIn2>
     <AnalogIn3 Status="Valid" IsReadOnly="true">0</AnalogIn3>
     <AnalogIn4 Status="Valid" IsReadOnly="true">0</AnalogIn4>
    </ParameterCollection>
@@ -2053,15 +2053,15 @@
     <Period Status="Valid">0</Period>
     <IsStabilizingPeriodically Status="Valid">false</IsStabilizingPeriodically>
     <Status Status="Valid">Standby</Status>
-    <IsInitialized Status="Valid">true</IsInitialized>
-    <DefiniteFocusSignalQuality Status="Valid">80</DefiniteFocusSignalQuality>
+    <IsInitialized Status="Valid">false</IsInitialized>
+    <DefiniteFocusSignalQuality Status="Valid">86</DefiniteFocusSignalQuality>
     <DefiniteFocusPositionOffset Status="Valid">NaN</DefiniteFocusPositionOffset>
     <DefiniteFocusOperationMode Status="Valid">Fast</DefiniteFocusOperationMode>
     <ObjectiveSuitability Status="Valid">Suitable</ObjectiveSuitability>
     <IsStabilizingInLocateMode Status="Valid">false</IsStabilizingInLocateMode>
     <DefiniteFocusResult Status="Valid">Success</DefiniteFocusResult>
     <DefiniteFocusError Status="Valid">NoError</DefiniteFocusError>
-    <DefiniteFocusPosition Status="Valid">9468.981</DefiniteFocusPosition>
+    <DefiniteFocusPosition Status="Valid">9466.397</DefiniteFocusPosition>
    </ParameterCollection>
    <ParameterCollection Id="MTBCameraAdapter_MTBSideportChanger_Left">
     <TheoreticalTotalMagnification Status="Valid">100</TheoreticalTotalMagnification>
@@ -2093,8 +2093,8 @@
     <TotalAperture Status="Valid">1.25</TotalAperture>
    </ParameterCollection>
    <ParameterCollection Id="MTBFocus">
-    <Position Status="Valid" Unit="&#181;m">9469.174</Position>
-    <MeasurementPosition Status="Valid">-26.055</MeasurementPosition>
+    <Position Status="Valid" Unit="&#181;m">9468.193</Position>
+    <MeasurementPosition Status="Valid">-27.036</MeasurementPosition>
     <IsPrecise Status="Valid">false</IsPrecise>
     <AxisSetPositionMode Status="Valid">Default</AxisSetPositionMode>
     <Speed Status="Valid">0</Speed>
@@ -2194,7 +2194,7 @@
     <Intensity Status="Valid">0</Intensity>
    </ParameterCollection>
    <ParameterCollection Id="MTBCSULaserLine2">
-    <IsEnabled Status="Valid">false</IsEnabled>
+    <IsEnabled Status="Valid">true</IsEnabled>
     <Intensity Status="Valid">0</Intensity>
    </ParameterCollection>
    <ParameterCollection Id="MTBCSULaserLine3">
@@ -3776,7 +3776,7 @@
     <Version>2.3.69.1018</Version>
    </Application>
    <Document>
-    <CreationDate>2020-09-10T13:51:21.7725762-07:00</CreationDate>
+    <CreationDate>2020-09-10T13:44:17.6685762-07:00</CreationDate>
     <UserName>caroline.hookway</UserName>
    </Document>
    <Image>
@@ -3788,7 +3788,7 @@
     <SizeM>1</SizeM>
     <OriginalCompressionMethod>Uncompressed</OriginalCompressionMethod>
     <OriginalEncodingQuality>100</OriginalEncodingQuality>
-    <AcquisitionDateAndTime>2020-09-10T20:51:21.7355762Z</AcquisitionDateAndTime>
+    <AcquisitionDateAndTime>2020-09-10T20:44:17.6325762Z</AcquisitionDateAndTime>
     <SizeC>2</SizeC>
     <SizeZ>65</SizeZ>
     <ComponentBitCount>16</ComponentBitCount>
@@ -3807,14 +3807,22 @@
        <PixelType>Gray16</PixelType>
        <ComponentBitCount>16</ComponentBitCount>
        <AcquisitionMode>SpinningDiskConfocal</AcquisitionMode>
+       <IlluminationWavelength>
+        <SinglePeak>488</SinglePeak>
+        <Ranges>487-489</Ranges>
+       </IlluminationWavelength>
        <DetectorSettings>
         <Binning>2,2</Binning>
         <Detector Id="Detector:Camera 1 (Back)"/>
        </DetectorSettings>
        <LightSourcesSettings>
         <LightSourceSettings>
-         <Intensity>n/a</Intensity>
+         <Intensity>36.00 %</Intensity>
          <LightSource Id="LightSource:1"/>
+        </LightSourceSettings>
+        <LightSourceSettings>
+         <Intensity>n/a</Intensity>
+         <LightSource Id="LightSource:2"/>
         </LightSourceSettings>
        </LightSourcesSettings>
       </Channel>
@@ -3834,6 +3842,10 @@
        <PixelType>Gray16</PixelType>
        <ComponentBitCount>16</ComponentBitCount>
        <AcquisitionMode>SpinningDiskConfocal</AcquisitionMode>
+       <IlluminationWavelength>
+        <SinglePeak>488</SinglePeak>
+        <Ranges>487-489</Ranges>
+       </IlluminationWavelength>
        <DetectionWavelength/>
        <DetectorSettings>
         <Binning>2,2</Binning>
@@ -3841,8 +3853,12 @@
        </DetectorSettings>
        <LightSourcesSettings>
         <LightSourceSettings>
+         <Intensity>36.00 %</Intensity>
+         <LightSource Id="LightSource:3"/>
+        </LightSourceSettings>
+        <LightSourceSettings>
          <Intensity>n/a</Intensity>
-         <LightSource Id="LightSource:2"/>
+         <LightSource Id="LightSource:4"/>
         </LightSourceSettings>
        </LightSourcesSettings>
       </Channel>
@@ -3856,7 +3872,7 @@
       </Track>
      </Tracks>
      <T>
-      <StartTime>2020-09-10T20:51:21.7355762Z</StartTime>
+      <StartTime>2020-09-10T20:44:17.6325762Z</StartTime>
       <Positions>
        <BinaryList>
         <AttachmentName>TimeStamps</AttachmentName>
@@ -3959,8 +3975,22 @@
      </Microscope>
     </Microscopes>
     <LightSources>
-     <LightSource Id="LightSource:1" Name="Other Lamp"/>
+     <LightSource Id="LightSource:1" Name="CSU Laserline 2">
+      <LightSourceType>
+       <Laser>
+        <Wavelength>488</Wavelength>
+       </Laser>
+      </LightSourceType>
+     </LightSource>
      <LightSource Id="LightSource:2" Name="Other Lamp"/>
+     <LightSource Id="LightSource:3" Name="CSU Laserline 2">
+      <LightSourceType>
+       <Laser>
+        <Wavelength>488</Wavelength>
+       </Laser>
+      </LightSourceType>
+     </LightSource>
+     <LightSource Id="LightSource:4" Name="Other Lamp"/>
     </LightSources>
     <Detectors>
      <Detector Id="Detector:Camera 1 (Back)" Name="Camera 1 (Back)">
@@ -4007,14 +4037,14 @@
     <TimelineTrack Name="IncubationRecording Track" Id="Track:1">
      <TimelineElements>
       <TimelineElement Id="1">
-       <Time>2020-09-10T20:51:21.7745762Z</Time>
+       <Time>2020-09-10T20:44:17.6695762Z</Time>
        <Duration>0.0000</Duration>
        <EventInformation>
         <IncubationRecording>
          <Components>
           <MTBIncubationTemperatureChannel1 Name="H Unit XL">
            <TargetValue>37</TargetValue>
-           <Value>37</Value>
+           <Value>37.1</Value>
            <IsEnabled>true</IsEnabled>
           </MTBIncubationTemperatureChannel1>
           <MTBIncubationTemperatureChannel2 Name="None">
@@ -4048,6 +4078,111 @@
       </TimelineElement>
      </TimelineElements>
     </TimelineTrack>
+    <TimelineTrack Name="FocusActions Track" Id="Track:2">
+     <TimelineElements>
+      <TimelineElement Id="1">
+       <Time>2020-09-10T20:44:17.8625762Z</Time>
+       <Duration>0.1142</Duration>
+       <EventInformation>
+        <FocusAction>
+         <Action>DefiniteFocusInitialize</Action>
+         <Result>Success</Result>
+         <StartPosition>9468.193</StartPosition>
+         <ResultPosition>9468.193</ResultPosition>
+         <X>22265.362</X>
+         <Y>31801.199</Y>
+        </FocusAction>
+       </EventInformation>
+       <Bounds StartB="0"/>
+       <IsEnabledForAnnotations>false</IsEnabledForAnnotations>
+      </TimelineElement>
+      <TimelineElement Id="2">
+       <Time>2020-09-10T20:44:18.9275762Z</Time>
+       <Duration>0.1660</Duration>
+       <EventInformation>
+        <FocusAction>
+         <Action>DefiniteFocusStabilize</Action>
+         <Result>Success</Result>
+         <StartPosition>9468.193</StartPosition>
+         <ResultPosition>9470.581</ResultPosition>
+         <Quality>96</Quality>
+         <X>23023.061</X>
+         <Y>32643.279</Y>
+        </FocusAction>
+       </EventInformation>
+       <Bounds StartB="0"/>
+       <IsEnabledForAnnotations>true</IsEnabledForAnnotations>
+      </TimelineElement>
+      <TimelineElement Id="3">
+       <Time>2020-09-10T20:44:35.6285762Z</Time>
+       <Duration>0.2138</Duration>
+       <EventInformation>
+        <FocusAction>
+         <Action>DefiniteFocusStabilize</Action>
+         <Result>Success</Result>
+         <StartPosition>9470.581</StartPosition>
+         <ResultPosition>9471.344</ResultPosition>
+         <Quality>90</Quality>
+         <X>23232.939</X>
+         <Y>32428.939</Y>
+        </FocusAction>
+       </EventInformation>
+       <Bounds StartZ="64" StartT="0" StartS="0" StartB="0" StartM="0"/>
+       <IsEnabledForAnnotations>true</IsEnabledForAnnotations>
+      </TimelineElement>
+      <TimelineElement Id="4">
+       <Time>2020-09-10T20:44:52.3865762Z</Time>
+       <Duration>0.1930</Duration>
+       <EventInformation>
+        <FocusAction>
+         <Action>DefiniteFocusStabilize</Action>
+         <Result>Success</Result>
+         <StartPosition>9471.344</StartPosition>
+         <ResultPosition>9470.319</ResultPosition>
+         <Quality>79</Quality>
+         <X>22790.109</X>
+         <Y>32715.939</Y>
+        </FocusAction>
+       </EventInformation>
+       <Bounds StartZ="64" StartT="0" StartS="1" StartB="0" StartM="0"/>
+       <IsEnabledForAnnotations>true</IsEnabledForAnnotations>
+      </TimelineElement>
+      <TimelineElement Id="5">
+       <Time>2020-09-10T20:45:09.1405762Z</Time>
+       <Duration>0.4000</Duration>
+       <EventInformation>
+        <FocusAction>
+         <Action>DefiniteFocusStabilize</Action>
+         <Result>Success</Result>
+         <StartPosition>9470.319</StartPosition>
+         <ResultPosition>9469.212</ResultPosition>
+         <Quality>78</Quality>
+         <X>22371.221</X>
+         <Y>31974.51</Y>
+        </FocusAction>
+       </EventInformation>
+       <Bounds StartZ="64" StartT="0" StartS="2" StartB="0" StartM="0"/>
+       <IsEnabledForAnnotations>true</IsEnabledForAnnotations>
+      </TimelineElement>
+      <TimelineElement Id="6">
+       <Time>2020-09-10T20:45:26.0665762Z</Time>
+       <Duration>0.2413</Duration>
+       <EventInformation>
+        <FocusAction>
+         <Action>DefiniteFocusStabilize</Action>
+         <Result>Success</Result>
+         <StartPosition>9469.212</StartPosition>
+         <ResultPosition>9468.981</ResultPosition>
+         <Quality>80</Quality>
+         <X>22264.711</X>
+         <Y>31801.199</Y>
+        </FocusAction>
+       </EventInformation>
+       <Bounds StartZ="64" StartT="0" StartS="3" StartB="0" StartM="0"/>
+       <IsEnabledForAnnotations>true</IsEnabledForAnnotations>
+      </TimelineElement>
+     </TimelineElements>
+    </TimelineTrack>
    </TimelineTracks>
   </Information>
   <Scaling>
@@ -4063,7 +4198,7 @@
     <CameraName>Camera 1 (Back)</CameraName>
     <CameraAdapterMagnification>1.2</CameraAdapterMagnification>
     <CameraPixelDistance>13,13</CameraPixelDistance>
-    <CreationDateTime>09/10/2020 20:51:23</CreationDateTime>
+    <CreationDateTime>09/10/2020 20:44:17</CreationDateTime>
    </AutoScaling>
    <Items>
     <Distance Id="X">
@@ -4083,8 +4218,8 @@
   <DisplaySetting>
    <Channels>
     <Channel Id="Channel:0" Name="Bright_2">
-     <Low>0.06140391423876005</Low>
-     <High>0.10344245911270665</High>
+     <Low>0.062851199314402931</Low>
+     <High>0.095976927050536315</High>
      <BitCountRange>16</BitCountRange>
      <PixelType>Gray16</PixelType>
      <DyeName>TL Brightfield</DyeName>
@@ -4094,8 +4229,8 @@
      <OriginalColor>#FFFFFFFF</OriginalColor>
     </Channel>
     <Channel Id="Channel:1" Name="EGFP">
-     <Low>0.0059503470902110564</Low>
-     <High>0.00878079226924475</High>
+     <Low>0.0052558552141937914</Low>
+     <High>0.01315739317943216</High>
      <BitCountRange>16</BitCountRange>
      <PixelType>Gray16</PixelType>
      <DyeName>EGFP</DyeName>
