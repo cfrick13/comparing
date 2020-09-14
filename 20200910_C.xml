@@ -86,7 +86,7 @@
          <SingleTileRegion Name="P1" Id="637353607226417922">
           <X>23023.711</X>
           <Y>32643.278</Y>
-          <Z>9470.078</Z>
+          <Z>9477.461</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="0"/>
@@ -95,7 +95,7 @@
          <SingleTileRegion Name="P2" Id="637353607410807923">
           <X>23233.586</X>
           <Y>32428.944</Y>
-          <Z>9471.282</Z>
+          <Z>9478.048</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="0"/>
@@ -104,7 +104,7 @@
          <SingleTileRegion Name="P3" Id="637353607518477924">
           <X>22790.759</X>
           <Y>32715.939</Y>
-          <Z>9469.449</Z>
+          <Z>9477.508</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="0"/>
@@ -113,7 +113,7 @@
          <SingleTileRegion Name="P4" Id="637353607674147925">
           <X>22371.868</X>
           <Y>31974.507</Y>
-          <Z>9468.193</Z>
+          <Z>9474.707</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="-0.667"/>
@@ -122,7 +122,7 @@
          <SingleTileRegion Name="P5" Id="637353607742547926">
           <X>22265.362</X>
           <Y>31801.199</Y>
-          <Z>9468.193</Z>
+          <Z>9477.343</Z>
           <IsUsedForAcquisition>true</IsUsedForAcquisition>
           <AdditionalValues>
            <DefiniteFocusOffset Coordinate="-0.505"/>
@@ -213,351 +213,351 @@
        <SubDimensionSetups>
         <TilesSetup IsActivated="true">
          <SubDimensionSetups>
-          <ZStackSetup IsActivated="true">
-           <IsCenterMode>true</IsCenterMode>
-           <IsIntervalKept>true</IsIntervalKept>
-           <Offset>0</Offset>
-           <RefractiveIndexCorrection>1</RefractiveIndexCorrection>
-           <UseFocusBacklashCorrection>true</UseFocusBacklashCorrection>
-           <DelayAfterFocusMove>0</DelayAfterFocusMove>
-           <First>
-            <Distance>
-             <Value>0.00946622</Value>
-             <DefaultUnitFormat>um</DefaultUnitFormat>
-            </Distance>
-           </First>
-           <Last>
-            <Distance>
-             <Value>0.00948478</Value>
-             <DefaultUnitFormat>um</DefaultUnitFormat>
-            </Distance>
-           </Last>
-           <Interval>
-            <Distance>
-             <Value>2.9E-07</Value>
-             <DefaultUnitFormat>um</DefaultUnitFormat>
-            </Distance>
-           </Interval>
-           <SetupExtensions/>
+          <MultiTrackSetup IsActivated="true">
+           <IsTIRFAngleSynchronized>true</IsTIRFAngleSynchronized>
+           <ImagingDepth>0</ImagingDepth>
+           <Track IsActivated="false" IsSelected="true">
+            <DetectionModeSetup>
+             <Zeiss.Micro.Acquisition.WfTrackDetectionMode/>
+            </DetectionModeSetup>
+            <BeforeHardwareSetting>Before_Brightfield_10x</BeforeHardwareSetting>
+            <AfterHardwareSetting>After_Brightfield</AfterHardwareSetting>
+            <IsExtendedSetupModificationWarningShown>false</IsExtendedSetupModificationWarningShown>
+            <TrackName>Bright</TrackName>
+            <ZStackMode>Yes</ZStackMode>
+            <UseZStackCenter>true</UseZStackCenter>
+            <ZStackSliceIndex>1</ZStackSliceIndex>
+            <IsDisabledForApoTome>false</IsDisabledForApoTome>
+            <FocusOffset>0</FocusOffset>
+            <DirectDevice>Standard</DirectDevice>
+            <Channels>
+             <Channel IsActivated="false" IsSelected="true" ChannelSetupId="636703856068319566" Name="Bright" Description="">
+              <Color>#FFFFFFFF</Color>
+              <PixelShiftX>0</PixelShiftX>
+              <PixelShiftY>0</PixelShiftY>
+              <DataGrabberSetup>
+               <CameraFrameSetup Id="MTBCamera_MTBCSU_Top.HDCamC11440-22C">
+                <ExposureTime IsActivated="true">50</ExposureTime>
+                <Adjust IsActivated="true">0.7</Adjust>
+                <AutoExposure IsActivated="true">false</AutoExposure>
+                <EMGain>0</EMGain>
+                <ShadingReference IsActivated="true">false</ShadingReference>
+                <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
+               </CameraFrameSetup>
+              </DataGrabberSetup>
+              <AdditionalDyeInformation>
+               <ShortName>Bright</ShortName>
+               <IlluminationType>Transmitted</IlluminationType>
+              </AdditionalDyeInformation>
+              <ContrastMethod>
+               <Name>TL Brightfield</Name>
+               <ShortName>Bright</ShortName>
+               <Description/>
+               <IlluminationType>Transmitted</IlluminationType>
+               <ContrastMethods>TransmittedLightBrightfield</ContrastMethods>
+               <ContrastTypes>BrightField</ContrastTypes>
+               <Color>#FFFFFFFF</Color>
+              </ContrastMethod>
+             </Channel>
+            </Channels>
+           </Track>
+           <Track IsActivated="true" IsSelected="false">
+            <DetectionModeSetup>
+             <Zeiss.Micro.Acquisition.WfTrackDetectionMode/>
+            </DetectionModeSetup>
+            <BeforeHardwareSetting>Before_Bright+EGFP</BeforeHardwareSetting>
+            <AfterHardwareSetting>After_Bright+EGFP_T</AfterHardwareSetting>
+            <IsExtendedSetupModificationWarningShown>false</IsExtendedSetupModificationWarningShown>
+            <TrackName>Bright+eGFP</TrackName>
+            <ZStackMode>Yes</ZStackMode>
+            <UseZStackCenter>true</UseZStackCenter>
+            <ZStackSliceIndex>1</ZStackSliceIndex>
+            <IsDisabledForApoTome>false</IsDisabledForApoTome>
+            <FocusOffset>0</FocusOffset>
+            <DirectDevice>Standard</DirectDevice>
+            <Channels>
+             <Channel IsActivated="true" IsSelected="false" ChannelSetupId="636970957172294743" Name="Bright_2" Description="">
+              <Color>#FFFFFFFF</Color>
+              <PixelShiftX>0</PixelShiftX>
+              <PixelShiftY>0</PixelShiftY>
+              <DataGrabberSetup>
+               <CameraFrameSetup Id="MTBCamera_MTBCSU_Top.HDCamC11440-22C">
+                <ExposureTime IsActivated="true">50</ExposureTime>
+                <Adjust IsActivated="true">0.7</Adjust>
+                <AutoExposure IsActivated="true">false</AutoExposure>
+                <EMGain>0</EMGain>
+                <ShadingReference IsActivated="true">false</ShadingReference>
+                <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
+               </CameraFrameSetup>
+              </DataGrabberSetup>
+              <AdditionalDyeInformation>
+               <ShortName>Bright</ShortName>
+               <IlluminationType>Transmitted</IlluminationType>
+              </AdditionalDyeInformation>
+              <ContrastMethod>
+               <Name>TL Brightfield</Name>
+               <ShortName>Bright</ShortName>
+               <Description/>
+               <IlluminationType>Transmitted</IlluminationType>
+               <ContrastMethods>TransmittedLightBrightfield</ContrastMethods>
+               <ContrastTypes>BrightField</ContrastTypes>
+               <Color>#FFFFFFFF</Color>
+              </ContrastMethod>
+             </Channel>
+             <Channel IsActivated="true" IsSelected="false" ChannelSetupId="636970971793307884" Name="EGFP" Description="">
+              <Color>#FF00FF5B</Color>
+              <PixelShiftX>0</PixelShiftX>
+              <PixelShiftY>0</PixelShiftY>
+              <DataGrabberSetup>
+               <CameraFrameSetup Id="MTBCamera_MTBCSU_Left.HDCamC11440-22C">
+                <ExposureTime IsActivated="true">200</ExposureTime>
+                <Adjust IsActivated="true">0.7</Adjust>
+                <AutoExposure IsActivated="true">false</AutoExposure>
+                <EMGain>0</EMGain>
+                <ShadingReference IsActivated="true">false</ShadingReference>
+                <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
+               </CameraFrameSetup>
+              </DataGrabberSetup>
+              <AdditionalDyeInformation>
+               <ShortName>EGFP</ShortName>
+               <IlluminationType>Fluorescence</IlluminationType>
+               <DyeMaxEmission>509</DyeMaxEmission>
+               <DyeMaxExcitation>488</DyeMaxExcitation>
+               <DyeId>McNamara-Boswell-0828</DyeId>
+               <DyeDatabaseId>66071726-cbd4-4c41-b371-0a6eee4ae9c5</DyeDatabaseId>
+              </AdditionalDyeInformation>
+              <FluorescenceDye>
+               <Name>EGFP</Name>
+               <ShortName>EGFP</ShortName>
+               <Description/>
+               <IlluminationType>Fluorescence</IlluminationType>
+               <ContrastMethods>ReflectedLightFluorescence</ContrastMethods>
+               <ContrastTypes>Unknown</ContrastTypes>
+               <Color>#FF00FF5B</Color>
+               <dye_id>McNamara-Boswell-0828</dye_id>
+               <collection_id>66071726-cbd4-4c41-b371-0a6eee4ae9c5</collection_id>
+              </FluorescenceDye>
+             </Channel>
+            </Channels>
+           </Track>
+           <Track IsActivated="false" IsSelected="false">
+            <DetectionModeSetup>
+             <Zeiss.Micro.Acquisition.WfTrackDetectionMode/>
+            </DetectionModeSetup>
+            <BeforeHardwareSetting>Before_TagRFP</BeforeHardwareSetting>
+            <AfterHardwareSetting>After_TagRFP_CH</AfterHardwareSetting>
+            <IsExtendedSetupModificationWarningShown>false</IsExtendedSetupModificationWarningShown>
+            <TrackName>TaRFP</TrackName>
+            <ZStackMode>Yes</ZStackMode>
+            <UseZStackCenter>true</UseZStackCenter>
+            <ZStackSliceIndex>1</ZStackSliceIndex>
+            <IsDisabledForApoTome>false</IsDisabledForApoTome>
+            <FocusOffset>0</FocusOffset>
+            <DirectDevice>Standard</DirectDevice>
+            <Channels>
+             <Channel IsActivated="false" IsSelected="false" ChannelSetupId="636973356452223072" Name="TaRFP" Description="">
+              <Color>#FFFF4500</Color>
+              <PixelShiftX>0</PixelShiftX>
+              <PixelShiftY>0</PixelShiftY>
+              <DataGrabberSetup>
+               <CameraFrameSetup Id="MTBCamera_MTBCSU_Left.HDCamC11440-22C">
+                <ExposureTime IsActivated="true">200</ExposureTime>
+                <Adjust IsActivated="true">0.3</Adjust>
+                <AutoExposure IsActivated="true">false</AutoExposure>
+                <EMGain>0</EMGain>
+                <ShadingReference IsActivated="true">false</ShadingReference>
+                <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
+               </CameraFrameSetup>
+              </DataGrabberSetup>
+              <AdditionalDyeInformation>
+               <ShortName>TaRFP</ShortName>
+               <IlluminationType>Fluorescence</IlluminationType>
+               <DyeMaxEmission>583</DyeMaxEmission>
+               <DyeMaxExcitation>558</DyeMaxExcitation>
+               <DyeId>McNamara-Boswell-1372</DyeId>
+               <DyeDatabaseId>66071726-cbd4-4c41-b371-0a6eee4ae9c5</DyeDatabaseId>
+              </AdditionalDyeInformation>
+              <FluorescenceDye>
+               <Name>TagRFP</Name>
+               <ShortName>TaRFP</ShortName>
+               <Description/>
+               <IlluminationType>Fluorescence</IlluminationType>
+               <ContrastMethods>ReflectedLightFluorescence</ContrastMethods>
+               <ContrastTypes>Unknown</ContrastTypes>
+               <Color>#FFFF4500</Color>
+               <dye_id>McNamara-Boswell-1372</dye_id>
+               <collection_id>66071726-cbd4-4c41-b371-0a6eee4ae9c5</collection_id>
+              </FluorescenceDye>
+             </Channel>
+            </Channels>
+           </Track>
+           <Track IsActivated="false" IsSelected="false">
+            <DetectionModeSetup>
+             <Zeiss.Micro.Acquisition.WfTrackDetectionMode/>
+            </DetectionModeSetup>
+            <BeforeHardwareSetting>Before_CMDR+H3342</BeforeHardwareSetting>
+            <AfterHardwareSetting>After_CMDR+H3342_BE</AfterHardwareSetting>
+            <IsExtendedSetupModificationWarningShown>false</IsExtendedSetupModificationWarningShown>
+            <TrackName>CMDRP+H3342</TrackName>
+            <ZStackMode>Yes</ZStackMode>
+            <UseZStackCenter>true</UseZStackCenter>
+            <ZStackSliceIndex>1</ZStackSliceIndex>
+            <IsDisabledForApoTome>false</IsDisabledForApoTome>
+            <FocusOffset>0</FocusOffset>
+            <DirectDevice>Standard</DirectDevice>
+            <Channels>
+             <Channel IsActivated="false" IsSelected="false" ChannelSetupId="636970972297747886" Name="CMDRP" Description="">
+              <Color>#FFFF0015</Color>
+              <PixelShiftX>0</PixelShiftX>
+              <PixelShiftY>0</PixelShiftY>
+              <DataGrabberSetup>
+               <CameraFrameSetup Id="MTBCamera_MTBCSU_Top.HDCamC11440-22C">
+                <ExposureTime IsActivated="true">200</ExposureTime>
+                <Adjust IsActivated="true">0.3</Adjust>
+                <AutoExposure IsActivated="true">false</AutoExposure>
+                <EMGain>0</EMGain>
+                <ShadingReference IsActivated="true">false</ShadingReference>
+                <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
+               </CameraFrameSetup>
+              </DataGrabberSetup>
+              <AdditionalDyeInformation>
+               <ShortName>CMDRP</ShortName>
+               <IlluminationType>Fluorescence</IlluminationType>
+               <DyeMaxEmission>676</DyeMaxEmission>
+               <DyeMaxExcitation>659</DyeMaxExcitation>
+               <DyeId>McNamara-Boswell-1441</DyeId>
+               <DyeDatabaseId>66071726-cbd4-4c41-b371-0a6eee4ae9c5</DyeDatabaseId>
+              </AdditionalDyeInformation>
+              <FluorescenceDye>
+               <Name>CellMask Deep Red plasma membrane stain</Name>
+               <ShortName>CMDRP</ShortName>
+               <Description/>
+               <IlluminationType>Fluorescence</IlluminationType>
+               <ContrastMethods>ReflectedLightFluorescence</ContrastMethods>
+               <ContrastTypes>Unknown</ContrastTypes>
+               <Color>#FFFF0015</Color>
+               <dye_id>McNamara-Boswell-1441</dye_id>
+               <collection_id>66071726-cbd4-4c41-b371-0a6eee4ae9c5</collection_id>
+              </FluorescenceDye>
+             </Channel>
+             <Channel IsActivated="false" IsSelected="false" ChannelSetupId="636970972440287889" Name="H3342" Description="">
+              <Color>#FF0076FF</Color>
+              <PixelShiftX>0</PixelShiftX>
+              <PixelShiftY>0</PixelShiftY>
+              <DataGrabberSetup>
+               <CameraFrameSetup Id="MTBCamera_MTBCSU_Left.HDCamC11440-22C">
+                <ExposureTime IsActivated="true">200</ExposureTime>
+                <Adjust IsActivated="true">0.7</Adjust>
+                <AutoExposure IsActivated="true">false</AutoExposure>
+                <EMGain>0</EMGain>
+                <ShadingReference IsActivated="true">false</ShadingReference>
+                <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
+               </CameraFrameSetup>
+              </DataGrabberSetup>
+              <AdditionalDyeInformation>
+               <ShortName>H3342</ShortName>
+               <IlluminationType>Fluorescence</IlluminationType>
+               <DyeMaxEmission>455</DyeMaxEmission>
+               <DyeMaxExcitation>348</DyeMaxExcitation>
+               <DyeId>McNamara-Boswell-1326</DyeId>
+               <DyeDatabaseId>66071726-cbd4-4c41-b371-0a6eee4ae9c5</DyeDatabaseId>
+              </AdditionalDyeInformation>
+              <FluorescenceDye>
+               <Name>Hoechst 33342</Name>
+               <ShortName>H3342</ShortName>
+               <Description/>
+               <IlluminationType>Fluorescence</IlluminationType>
+               <ContrastMethods>ReflectedLightFluorescence</ContrastMethods>
+               <ContrastTypes>Unknown</ContrastTypes>
+               <Color>#FF0076FF</Color>
+               <dye_id>McNamara-Boswell-1326</dye_id>
+               <collection_id>66071726-cbd4-4c41-b371-0a6eee4ae9c5</collection_id>
+              </FluorescenceDye>
+             </Channel>
+            </Channels>
+           </Track>
+           <Track IsActivated="false" IsSelected="false">
+            <DetectionModeSetup>
+             <Zeiss.Micro.Acquisition.WfTrackDetectionMode/>
+            </DetectionModeSetup>
+            <BeforeHardwareSetting>Before_CMDR+H33422</BeforeHardwareSetting>
+            <AfterHardwareSetting>After_CMDR+H3342_BE2</AfterHardwareSetting>
+            <IsExtendedSetupModificationWarningShown>false</IsExtendedSetupModificationWarningShown>
+            <TrackName>CMDR</TrackName>
+            <ZStackMode>Yes</ZStackMode>
+            <UseZStackCenter>true</UseZStackCenter>
+            <ZStackSliceIndex>1</ZStackSliceIndex>
+            <IsDisabledForApoTome>false</IsDisabledForApoTome>
+            <FocusOffset>0</FocusOffset>
+            <DirectDevice>Standard</DirectDevice>
+            <Channels>
+             <Channel IsActivated="false" IsSelected="false" ChannelSetupId="637351083062478289" Name="CMDRP_2" Description="">
+              <Color>#FFFF0015</Color>
+              <PixelShiftX>0</PixelShiftX>
+              <PixelShiftY>0</PixelShiftY>
+              <DataGrabberSetup>
+               <CameraFrameSetup Id="MTBCamera_MTBCSU_Top.HDCamC11440-22C">
+                <ExposureTime IsActivated="true">200</ExposureTime>
+                <Adjust IsActivated="true">0.3</Adjust>
+                <AutoExposure IsActivated="true">false</AutoExposure>
+                <EMGain>0</EMGain>
+                <ShadingReference IsActivated="true">false</ShadingReference>
+                <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
+               </CameraFrameSetup>
+              </DataGrabberSetup>
+              <AdditionalDyeInformation>
+               <ShortName>CMDRP</ShortName>
+               <IlluminationType>Fluorescence</IlluminationType>
+               <DyeMaxEmission>676</DyeMaxEmission>
+               <DyeMaxExcitation>659</DyeMaxExcitation>
+               <DyeId>McNamara-Boswell-1441</DyeId>
+               <DyeDatabaseId>66071726-cbd4-4c41-b371-0a6eee4ae9c5</DyeDatabaseId>
+              </AdditionalDyeInformation>
+              <FluorescenceDye>
+               <Name>CellMask Deep Red plasma membrane stain</Name>
+               <ShortName>CMDRP</ShortName>
+               <Description/>
+               <IlluminationType>Fluorescence</IlluminationType>
+               <ContrastMethods>ReflectedLightFluorescence</ContrastMethods>
+               <ContrastTypes>Unknown</ContrastTypes>
+               <Color>#FFFF0015</Color>
+               <dye_id>McNamara-Boswell-1441</dye_id>
+               <collection_id>66071726-cbd4-4c41-b371-0a6eee4ae9c5</collection_id>
+              </FluorescenceDye>
+             </Channel>
+            </Channels>
+           </Track>
            <SubDimensionSetups>
-            <MultiTrackSetup IsActivated="true">
-             <IsTIRFAngleSynchronized>true</IsTIRFAngleSynchronized>
-             <ImagingDepth>0</ImagingDepth>
-             <Track IsActivated="false" IsSelected="true">
-              <DetectionModeSetup>
-               <Zeiss.Micro.Acquisition.WfTrackDetectionMode/>
-              </DetectionModeSetup>
-              <BeforeHardwareSetting>Before_Brightfield_10x</BeforeHardwareSetting>
-              <AfterHardwareSetting>After_Brightfield</AfterHardwareSetting>
-              <IsExtendedSetupModificationWarningShown>false</IsExtendedSetupModificationWarningShown>
-              <TrackName>Bright</TrackName>
-              <ZStackMode>Yes</ZStackMode>
-              <UseZStackCenter>true</UseZStackCenter>
-              <ZStackSliceIndex>1</ZStackSliceIndex>
-              <IsDisabledForApoTome>false</IsDisabledForApoTome>
-              <FocusOffset>0</FocusOffset>
-              <DirectDevice>Standard</DirectDevice>
-              <Channels>
-               <Channel IsActivated="false" IsSelected="true" ChannelSetupId="636703856068319566" Name="Bright" Description="">
-                <Color>#FFFFFFFF</Color>
-                <PixelShiftX>0</PixelShiftX>
-                <PixelShiftY>0</PixelShiftY>
-                <DataGrabberSetup>
-                 <CameraFrameSetup Id="MTBCamera_MTBCSU_Top.HDCamC11440-22C">
-                  <ExposureTime IsActivated="true">50</ExposureTime>
-                  <Adjust IsActivated="true">0.7</Adjust>
-                  <AutoExposure IsActivated="true">false</AutoExposure>
-                  <EMGain>0</EMGain>
-                  <ShadingReference IsActivated="true">false</ShadingReference>
-                  <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
-                 </CameraFrameSetup>
-                </DataGrabberSetup>
-                <AdditionalDyeInformation>
-                 <ShortName>Bright</ShortName>
-                 <IlluminationType>Transmitted</IlluminationType>
-                </AdditionalDyeInformation>
-                <ContrastMethod>
-                 <Name>TL Brightfield</Name>
-                 <ShortName>Bright</ShortName>
-                 <Description/>
-                 <IlluminationType>Transmitted</IlluminationType>
-                 <ContrastMethods>TransmittedLightBrightfield</ContrastMethods>
-                 <ContrastTypes>BrightField</ContrastTypes>
-                 <Color>#FFFFFFFF</Color>
-                </ContrastMethod>
-               </Channel>
-              </Channels>
-             </Track>
-             <Track IsActivated="true" IsSelected="false">
-              <DetectionModeSetup>
-               <Zeiss.Micro.Acquisition.WfTrackDetectionMode/>
-              </DetectionModeSetup>
-              <BeforeHardwareSetting>Before_Bright+EGFP</BeforeHardwareSetting>
-              <AfterHardwareSetting>After_Bright+EGFP_T</AfterHardwareSetting>
-              <IsExtendedSetupModificationWarningShown>false</IsExtendedSetupModificationWarningShown>
-              <TrackName>Bright+eGFP</TrackName>
-              <ZStackMode>Yes</ZStackMode>
-              <UseZStackCenter>true</UseZStackCenter>
-              <ZStackSliceIndex>1</ZStackSliceIndex>
-              <IsDisabledForApoTome>false</IsDisabledForApoTome>
-              <FocusOffset>0</FocusOffset>
-              <DirectDevice>Standard</DirectDevice>
-              <Channels>
-               <Channel IsActivated="true" IsSelected="false" ChannelSetupId="636970957172294743" Name="Bright_2" Description="">
-                <Color>#FFFFFFFF</Color>
-                <PixelShiftX>0</PixelShiftX>
-                <PixelShiftY>0</PixelShiftY>
-                <DataGrabberSetup>
-                 <CameraFrameSetup Id="MTBCamera_MTBCSU_Top.HDCamC11440-22C">
-                  <ExposureTime IsActivated="true">50</ExposureTime>
-                  <Adjust IsActivated="true">0.7</Adjust>
-                  <AutoExposure IsActivated="true">false</AutoExposure>
-                  <EMGain>0</EMGain>
-                  <ShadingReference IsActivated="true">false</ShadingReference>
-                  <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
-                 </CameraFrameSetup>
-                </DataGrabberSetup>
-                <AdditionalDyeInformation>
-                 <ShortName>Bright</ShortName>
-                 <IlluminationType>Transmitted</IlluminationType>
-                </AdditionalDyeInformation>
-                <ContrastMethod>
-                 <Name>TL Brightfield</Name>
-                 <ShortName>Bright</ShortName>
-                 <Description/>
-                 <IlluminationType>Transmitted</IlluminationType>
-                 <ContrastMethods>TransmittedLightBrightfield</ContrastMethods>
-                 <ContrastTypes>BrightField</ContrastTypes>
-                 <Color>#FFFFFFFF</Color>
-                </ContrastMethod>
-               </Channel>
-               <Channel IsActivated="true" IsSelected="false" ChannelSetupId="636970971793307884" Name="EGFP" Description="">
-                <Color>#FF00FF5B</Color>
-                <PixelShiftX>0</PixelShiftX>
-                <PixelShiftY>0</PixelShiftY>
-                <DataGrabberSetup>
-                 <CameraFrameSetup Id="MTBCamera_MTBCSU_Left.HDCamC11440-22C">
-                  <ExposureTime IsActivated="true">200</ExposureTime>
-                  <Adjust IsActivated="true">0.7</Adjust>
-                  <AutoExposure IsActivated="true">false</AutoExposure>
-                  <EMGain>0</EMGain>
-                  <ShadingReference IsActivated="true">false</ShadingReference>
-                  <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
-                 </CameraFrameSetup>
-                </DataGrabberSetup>
-                <AdditionalDyeInformation>
-                 <ShortName>EGFP</ShortName>
-                 <IlluminationType>Fluorescence</IlluminationType>
-                 <DyeMaxEmission>509</DyeMaxEmission>
-                 <DyeMaxExcitation>488</DyeMaxExcitation>
-                 <DyeId>McNamara-Boswell-0828</DyeId>
-                 <DyeDatabaseId>66071726-cbd4-4c41-b371-0a6eee4ae9c5</DyeDatabaseId>
-                </AdditionalDyeInformation>
-                <FluorescenceDye>
-                 <Name>EGFP</Name>
-                 <ShortName>EGFP</ShortName>
-                 <Description/>
-                 <IlluminationType>Fluorescence</IlluminationType>
-                 <ContrastMethods>ReflectedLightFluorescence</ContrastMethods>
-                 <ContrastTypes>Unknown</ContrastTypes>
-                 <Color>#FF00FF5B</Color>
-                 <dye_id>McNamara-Boswell-0828</dye_id>
-                 <collection_id>66071726-cbd4-4c41-b371-0a6eee4ae9c5</collection_id>
-                </FluorescenceDye>
-               </Channel>
-              </Channels>
-             </Track>
-             <Track IsActivated="false" IsSelected="false">
-              <DetectionModeSetup>
-               <Zeiss.Micro.Acquisition.WfTrackDetectionMode/>
-              </DetectionModeSetup>
-              <BeforeHardwareSetting>Before_TagRFP</BeforeHardwareSetting>
-              <AfterHardwareSetting>After_TagRFP_CH</AfterHardwareSetting>
-              <IsExtendedSetupModificationWarningShown>false</IsExtendedSetupModificationWarningShown>
-              <TrackName>TaRFP</TrackName>
-              <ZStackMode>Yes</ZStackMode>
-              <UseZStackCenter>true</UseZStackCenter>
-              <ZStackSliceIndex>1</ZStackSliceIndex>
-              <IsDisabledForApoTome>false</IsDisabledForApoTome>
-              <FocusOffset>0</FocusOffset>
-              <DirectDevice>Standard</DirectDevice>
-              <Channels>
-               <Channel IsActivated="false" IsSelected="false" ChannelSetupId="636973356452223072" Name="TaRFP" Description="">
-                <Color>#FFFF4500</Color>
-                <PixelShiftX>0</PixelShiftX>
-                <PixelShiftY>0</PixelShiftY>
-                <DataGrabberSetup>
-                 <CameraFrameSetup Id="MTBCamera_MTBCSU_Left.HDCamC11440-22C">
-                  <ExposureTime IsActivated="true">200</ExposureTime>
-                  <Adjust IsActivated="true">0.3</Adjust>
-                  <AutoExposure IsActivated="true">false</AutoExposure>
-                  <EMGain>0</EMGain>
-                  <ShadingReference IsActivated="true">false</ShadingReference>
-                  <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
-                 </CameraFrameSetup>
-                </DataGrabberSetup>
-                <AdditionalDyeInformation>
-                 <ShortName>TaRFP</ShortName>
-                 <IlluminationType>Fluorescence</IlluminationType>
-                 <DyeMaxEmission>583</DyeMaxEmission>
-                 <DyeMaxExcitation>558</DyeMaxExcitation>
-                 <DyeId>McNamara-Boswell-1372</DyeId>
-                 <DyeDatabaseId>66071726-cbd4-4c41-b371-0a6eee4ae9c5</DyeDatabaseId>
-                </AdditionalDyeInformation>
-                <FluorescenceDye>
-                 <Name>TagRFP</Name>
-                 <ShortName>TaRFP</ShortName>
-                 <Description/>
-                 <IlluminationType>Fluorescence</IlluminationType>
-                 <ContrastMethods>ReflectedLightFluorescence</ContrastMethods>
-                 <ContrastTypes>Unknown</ContrastTypes>
-                 <Color>#FFFF4500</Color>
-                 <dye_id>McNamara-Boswell-1372</dye_id>
-                 <collection_id>66071726-cbd4-4c41-b371-0a6eee4ae9c5</collection_id>
-                </FluorescenceDye>
-               </Channel>
-              </Channels>
-             </Track>
-             <Track IsActivated="false" IsSelected="false">
-              <DetectionModeSetup>
-               <Zeiss.Micro.Acquisition.WfTrackDetectionMode/>
-              </DetectionModeSetup>
-              <BeforeHardwareSetting>Before_CMDR+H3342</BeforeHardwareSetting>
-              <AfterHardwareSetting>After_CMDR+H3342_BE</AfterHardwareSetting>
-              <IsExtendedSetupModificationWarningShown>false</IsExtendedSetupModificationWarningShown>
-              <TrackName>CMDRP+H3342</TrackName>
-              <ZStackMode>Yes</ZStackMode>
-              <UseZStackCenter>true</UseZStackCenter>
-              <ZStackSliceIndex>1</ZStackSliceIndex>
-              <IsDisabledForApoTome>false</IsDisabledForApoTome>
-              <FocusOffset>0</FocusOffset>
-              <DirectDevice>Standard</DirectDevice>
-              <Channels>
-               <Channel IsActivated="false" IsSelected="false" ChannelSetupId="636970972297747886" Name="CMDRP" Description="">
-                <Color>#FFFF0015</Color>
-                <PixelShiftX>0</PixelShiftX>
-                <PixelShiftY>0</PixelShiftY>
-                <DataGrabberSetup>
-                 <CameraFrameSetup Id="MTBCamera_MTBCSU_Top.HDCamC11440-22C">
-                  <ExposureTime IsActivated="true">200</ExposureTime>
-                  <Adjust IsActivated="true">0.3</Adjust>
-                  <AutoExposure IsActivated="true">false</AutoExposure>
-                  <EMGain>0</EMGain>
-                  <ShadingReference IsActivated="true">false</ShadingReference>
-                  <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
-                 </CameraFrameSetup>
-                </DataGrabberSetup>
-                <AdditionalDyeInformation>
-                 <ShortName>CMDRP</ShortName>
-                 <IlluminationType>Fluorescence</IlluminationType>
-                 <DyeMaxEmission>676</DyeMaxEmission>
-                 <DyeMaxExcitation>659</DyeMaxExcitation>
-                 <DyeId>McNamara-Boswell-1441</DyeId>
-                 <DyeDatabaseId>66071726-cbd4-4c41-b371-0a6eee4ae9c5</DyeDatabaseId>
-                </AdditionalDyeInformation>
-                <FluorescenceDye>
-                 <Name>CellMask Deep Red plasma membrane stain</Name>
-                 <ShortName>CMDRP</ShortName>
-                 <Description/>
-                 <IlluminationType>Fluorescence</IlluminationType>
-                 <ContrastMethods>ReflectedLightFluorescence</ContrastMethods>
-                 <ContrastTypes>Unknown</ContrastTypes>
-                 <Color>#FFFF0015</Color>
-                 <dye_id>McNamara-Boswell-1441</dye_id>
-                 <collection_id>66071726-cbd4-4c41-b371-0a6eee4ae9c5</collection_id>
-                </FluorescenceDye>
-               </Channel>
-               <Channel IsActivated="false" IsSelected="false" ChannelSetupId="636970972440287889" Name="H3342" Description="">
-                <Color>#FF0076FF</Color>
-                <PixelShiftX>0</PixelShiftX>
-                <PixelShiftY>0</PixelShiftY>
-                <DataGrabberSetup>
-                 <CameraFrameSetup Id="MTBCamera_MTBCSU_Left.HDCamC11440-22C">
-                  <ExposureTime IsActivated="true">200</ExposureTime>
-                  <Adjust IsActivated="true">0.7</Adjust>
-                  <AutoExposure IsActivated="true">false</AutoExposure>
-                  <EMGain>0</EMGain>
-                  <ShadingReference IsActivated="true">false</ShadingReference>
-                  <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
-                 </CameraFrameSetup>
-                </DataGrabberSetup>
-                <AdditionalDyeInformation>
-                 <ShortName>H3342</ShortName>
-                 <IlluminationType>Fluorescence</IlluminationType>
-                 <DyeMaxEmission>455</DyeMaxEmission>
-                 <DyeMaxExcitation>348</DyeMaxExcitation>
-                 <DyeId>McNamara-Boswell-1326</DyeId>
-                 <DyeDatabaseId>66071726-cbd4-4c41-b371-0a6eee4ae9c5</DyeDatabaseId>
-                </AdditionalDyeInformation>
-                <FluorescenceDye>
-                 <Name>Hoechst 33342</Name>
-                 <ShortName>H3342</ShortName>
-                 <Description/>
-                 <IlluminationType>Fluorescence</IlluminationType>
-                 <ContrastMethods>ReflectedLightFluorescence</ContrastMethods>
-                 <ContrastTypes>Unknown</ContrastTypes>
-                 <Color>#FF0076FF</Color>
-                 <dye_id>McNamara-Boswell-1326</dye_id>
-                 <collection_id>66071726-cbd4-4c41-b371-0a6eee4ae9c5</collection_id>
-                </FluorescenceDye>
-               </Channel>
-              </Channels>
-             </Track>
-             <Track IsActivated="false" IsSelected="false">
-              <DetectionModeSetup>
-               <Zeiss.Micro.Acquisition.WfTrackDetectionMode/>
-              </DetectionModeSetup>
-              <BeforeHardwareSetting>Before_CMDR+H33422</BeforeHardwareSetting>
-              <AfterHardwareSetting>After_CMDR+H3342_BE2</AfterHardwareSetting>
-              <IsExtendedSetupModificationWarningShown>false</IsExtendedSetupModificationWarningShown>
-              <TrackName>CMDR</TrackName>
-              <ZStackMode>Yes</ZStackMode>
-              <UseZStackCenter>true</UseZStackCenter>
-              <ZStackSliceIndex>1</ZStackSliceIndex>
-              <IsDisabledForApoTome>false</IsDisabledForApoTome>
-              <FocusOffset>0</FocusOffset>
-              <DirectDevice>Standard</DirectDevice>
-              <Channels>
-               <Channel IsActivated="false" IsSelected="false" ChannelSetupId="637351083062478289" Name="CMDRP_2" Description="">
-                <Color>#FFFF0015</Color>
-                <PixelShiftX>0</PixelShiftX>
-                <PixelShiftY>0</PixelShiftY>
-                <DataGrabberSetup>
-                 <CameraFrameSetup Id="MTBCamera_MTBCSU_Top.HDCamC11440-22C">
-                  <ExposureTime IsActivated="true">200</ExposureTime>
-                  <Adjust IsActivated="true">0.3</Adjust>
-                  <AutoExposure IsActivated="true">false</AutoExposure>
-                  <EMGain>0</EMGain>
-                  <ShadingReference IsActivated="true">false</ShadingReference>
-                  <ShadingReferenceSource IsActivated="true">1</ShadingReferenceSource>
-                 </CameraFrameSetup>
-                </DataGrabberSetup>
-                <AdditionalDyeInformation>
-                 <ShortName>CMDRP</ShortName>
-                 <IlluminationType>Fluorescence</IlluminationType>
-                 <DyeMaxEmission>676</DyeMaxEmission>
-                 <DyeMaxExcitation>659</DyeMaxExcitation>
-                 <DyeId>McNamara-Boswell-1441</DyeId>
-                 <DyeDatabaseId>66071726-cbd4-4c41-b371-0a6eee4ae9c5</DyeDatabaseId>
-                </AdditionalDyeInformation>
-                <FluorescenceDye>
-                 <Name>CellMask Deep Red plasma membrane stain</Name>
-                 <ShortName>CMDRP</ShortName>
-                 <Description/>
-                 <IlluminationType>Fluorescence</IlluminationType>
-                 <ContrastMethods>ReflectedLightFluorescence</ContrastMethods>
-                 <ContrastTypes>Unknown</ContrastTypes>
-                 <Color>#FFFF0015</Color>
-                 <dye_id>McNamara-Boswell-1441</dye_id>
-                 <collection_id>66071726-cbd4-4c41-b371-0a6eee4ae9c5</collection_id>
-                </FluorescenceDye>
-               </Channel>
-              </Channels>
-             </Track>
+            <ZStackSetup IsActivated="true">
+             <IsCenterMode>true</IsCenterMode>
+             <IsIntervalKept>true</IsIntervalKept>
+             <Offset>0</Offset>
+             <RefractiveIndexCorrection>1</RefractiveIndexCorrection>
+             <UseFocusBacklashCorrection>true</UseFocusBacklashCorrection>
+             <DelayAfterFocusMove>0</DelayAfterFocusMove>
+             <First>
+              <Distance>
+               <Value>0.0094660599999999984</Value>
+               <DefaultUnitFormat>um</DefaultUnitFormat>
+              </Distance>
+             </First>
+             <Last>
+              <Distance>
+               <Value>0.0094846200000000009</Value>
+               <DefaultUnitFormat>um</DefaultUnitFormat>
+              </Distance>
+             </Last>
+             <Interval>
+              <Distance>
+               <Value>2.9E-07</Value>
+               <DefaultUnitFormat>um</DefaultUnitFormat>
+              </Distance>
+             </Interval>
+             <SetupExtensions/>
              <SubDimensionSetups/>
-            </MultiTrackSetup>
+            </ZStackSetup>
            </SubDimensionSetups>
-          </ZStackSetup>
+          </MultiTrackSetup>
          </SubDimensionSetups>
         </TilesSetup>
        </SubDimensionSetups>
@@ -771,7 +771,7 @@
       <FocusSetup IsActivated="true">
        <RepetitionSettingsMode>Expert</RepetitionSettingsMode>
        <FocusStrategy IsActivated="true">
-        <StrategyMode>DefiniteFocus</StrategyMode>
+        <StrategyMode>None</StrategyMode>
         <ReferenceChannelId>636970957172294743</ReferenceChannelId>
         <IsFocussingOnAllTracks>false</IsFocussingOnAllTracks>
         <IsFocussingBeforeAcquisition>true</IsFocussingBeforeAcquisition>
@@ -779,7 +779,7 @@
         <UseZPositionFromTilesSetup>true</UseZPositionFromTilesSetup>
         <ExecutionInTileRegionMode>FirstTileOfRegion</ExecutionInTileRegionMode>
         <SupportPointsMode>FixedZPosition</SupportPointsMode>
-        <FocusZStackMode>FixedZ</FocusZStackMode>
+        <FocusZStackMode>CurrentZ</FocusZStackMode>
         <WaitPositionMode>CenterOfFirstRegion</WaitPositionMode>
         <WaitPositionX>0</WaitPositionX>
         <WaitPositionY>0</WaitPositionY>
@@ -797,7 +797,7 @@
          <SubInterval>1</SubInterval>
         </TimeSeriesIntervalInfo>
         <RegionsIntervalInfo>
-         <IsActivated>true</IsActivated>
+         <IsActivated>false</IsActivated>
          <IsMainIntervalEnabled>true</IsMainIntervalEnabled>
          <IsSubIntervalEnabled>false</IsSubIntervalEnabled>
          <MainInterval>1</MainInterval>
@@ -2044,8 +2044,8 @@
     <AnalogOut1 Status="Valid">0</AnalogOut1>
     <AnalogOut2 Status="Valid">0</AnalogOut2>
     <AnalogOut3 Status="Valid">0</AnalogOut3>
-    <AnalogIn1 Status="Valid" IsReadOnly="true">0.044556343938354</AnalogIn1>
-    <AnalogIn2 Status="Valid" IsReadOnly="true">0.0097657740138857</AnalogIn2>
+    <AnalogIn1 Status="Valid" IsReadOnly="true">0.05981536583505</AnalogIn1>
+    <AnalogIn2 Status="Valid" IsReadOnly="true">0.028686961165789</AnalogIn2>
     <AnalogIn3 Status="Valid" IsReadOnly="true">0</AnalogIn3>
     <AnalogIn4 Status="Valid" IsReadOnly="true">0</AnalogIn4>
    </ParameterCollection>
@@ -2053,15 +2053,15 @@
     <Period Status="Valid">0</Period>
     <IsStabilizingPeriodically Status="Valid">false</IsStabilizingPeriodically>
     <Status Status="Valid">Standby</Status>
-    <IsInitialized Status="Valid">false</IsInitialized>
-    <DefiniteFocusSignalQuality Status="Valid">86</DefiniteFocusSignalQuality>
+    <IsInitialized Status="Valid">true</IsInitialized>
+    <DefiniteFocusSignalQuality Status="Valid">87</DefiniteFocusSignalQuality>
     <DefiniteFocusPositionOffset Status="Valid">NaN</DefiniteFocusPositionOffset>
     <DefiniteFocusOperationMode Status="Valid">Fast</DefiniteFocusOperationMode>
     <ObjectiveSuitability Status="Valid">Suitable</ObjectiveSuitability>
     <IsStabilizingInLocateMode Status="Valid">false</IsStabilizingInLocateMode>
     <DefiniteFocusResult Status="Valid">Success</DefiniteFocusResult>
     <DefiniteFocusError Status="Valid">NoError</DefiniteFocusError>
-    <DefiniteFocusPosition Status="Valid">9466.397</DefiniteFocusPosition>
+    <DefiniteFocusPosition Status="Valid">9475.545</DefiniteFocusPosition>
    </ParameterCollection>
    <ParameterCollection Id="MTBCameraAdapter_MTBSideportChanger_Left">
     <TheoreticalTotalMagnification Status="Valid">100</TheoreticalTotalMagnification>
@@ -2093,8 +2093,8 @@
     <TotalAperture Status="Valid">1.25</TotalAperture>
    </ParameterCollection>
    <ParameterCollection Id="MTBFocus">
-    <Position Status="Valid" Unit="&#181;m">9468.193</Position>
-    <MeasurementPosition Status="Valid">-27.036</MeasurementPosition>
+    <Position Status="Valid" Unit="&#181;m">9477.343</Position>
+    <MeasurementPosition Status="Valid">-17.886</MeasurementPosition>
     <IsPrecise Status="Valid">false</IsPrecise>
     <AxisSetPositionMode Status="Valid">Default</AxisSetPositionMode>
     <Speed Status="Valid">0</Speed>
@@ -3776,7 +3776,7 @@
     <Version>2.3.69.1018</Version>
    </Application>
    <Document>
-    <CreationDate>2020-09-10T13:44:17.6685762-07:00</CreationDate>
+    <CreationDate>2020-09-10T13:25:17.9195762-07:00</CreationDate>
     <UserName>caroline.hookway</UserName>
    </Document>
    <Image>
@@ -3788,7 +3788,7 @@
     <SizeM>1</SizeM>
     <OriginalCompressionMethod>Uncompressed</OriginalCompressionMethod>
     <OriginalEncodingQuality>100</OriginalEncodingQuality>
-    <AcquisitionDateAndTime>2020-09-10T20:44:17.6325762Z</AcquisitionDateAndTime>
+    <AcquisitionDateAndTime>2020-09-10T20:25:17.8835762Z</AcquisitionDateAndTime>
     <SizeC>2</SizeC>
     <SizeZ>65</SizeZ>
     <ComponentBitCount>16</ComponentBitCount>
@@ -3872,7 +3872,7 @@
       </Track>
      </Tracks>
      <T>
-      <StartTime>2020-09-10T20:44:17.6325762Z</StartTime>
+      <StartTime>2020-09-10T20:25:17.8835762Z</StartTime>
       <Positions>
        <BinaryList>
         <AttachmentName>TimeStamps</AttachmentName>
@@ -4037,14 +4037,14 @@
     <TimelineTrack Name="IncubationRecording Track" Id="Track:1">
      <TimelineElements>
       <TimelineElement Id="1">
-       <Time>2020-09-10T20:44:17.6695762Z</Time>
+       <Time>2020-09-10T20:25:17.9205762Z</Time>
        <Duration>0.0000</Duration>
        <EventInformation>
         <IncubationRecording>
          <Components>
           <MTBIncubationTemperatureChannel1 Name="H Unit XL">
            <TargetValue>37</TargetValue>
-           <Value>37.1</Value>
+           <Value>37</Value>
            <IsEnabled>true</IsEnabled>
           </MTBIncubationTemperatureChannel1>
           <MTBIncubationTemperatureChannel2 Name="None">
@@ -4078,111 +4078,6 @@
       </TimelineElement>
      </TimelineElements>
     </TimelineTrack>
-    <TimelineTrack Name="FocusActions Track" Id="Track:2">
-     <TimelineElements>
-      <TimelineElement Id="1">
-       <Time>2020-09-10T20:44:17.8625762Z</Time>
-       <Duration>0.1142</Duration>
-       <EventInformation>
-        <FocusAction>
-         <Action>DefiniteFocusInitialize</Action>
-         <Result>Success</Result>
-         <StartPosition>9468.193</StartPosition>
-         <ResultPosition>9468.193</ResultPosition>
-         <X>22265.362</X>
-         <Y>31801.199</Y>
-        </FocusAction>
-       </EventInformation>
-       <Bounds StartB="0"/>
-       <IsEnabledForAnnotations>false</IsEnabledForAnnotations>
-      </TimelineElement>
-      <TimelineElement Id="2">
-       <Time>2020-09-10T20:44:18.9275762Z</Time>
-       <Duration>0.1660</Duration>
-       <EventInformation>
-        <FocusAction>
-         <Action>DefiniteFocusStabilize</Action>
-         <Result>Success</Result>
-         <StartPosition>9468.193</StartPosition>
-         <ResultPosition>9470.581</ResultPosition>
-         <Quality>96</Quality>
-         <X>23023.061</X>
-         <Y>32643.279</Y>
-        </FocusAction>
-       </EventInformation>
-       <Bounds StartB="0"/>
-       <IsEnabledForAnnotations>true</IsEnabledForAnnotations>
-      </TimelineElement>
-      <TimelineElement Id="3">
-       <Time>2020-09-10T20:44:35.6285762Z</Time>
-       <Duration>0.2138</Duration>
-       <EventInformation>
-        <FocusAction>
-         <Action>DefiniteFocusStabilize</Action>
-         <Result>Success</Result>
-         <StartPosition>9470.581</StartPosition>
-         <ResultPosition>9471.344</ResultPosition>
-         <Quality>90</Quality>
-         <X>23232.939</X>
-         <Y>32428.939</Y>
-        </FocusAction>
-       </EventInformation>
-       <Bounds StartZ="64" StartT="0" StartS="0" StartB="0" StartM="0"/>
-       <IsEnabledForAnnotations>true</IsEnabledForAnnotations>
-      </TimelineElement>
-      <TimelineElement Id="4">
-       <Time>2020-09-10T20:44:52.3865762Z</Time>
-       <Duration>0.1930</Duration>
-       <EventInformation>
-        <FocusAction>
-         <Action>DefiniteFocusStabilize</Action>
-         <Result>Success</Result>
-         <StartPosition>9471.344</StartPosition>
-         <ResultPosition>9470.319</ResultPosition>
-         <Quality>79</Quality>
-         <X>22790.109</X>
-         <Y>32715.939</Y>
-        </FocusAction>
-       </EventInformation>
-       <Bounds StartZ="64" StartT="0" StartS="1" StartB="0" StartM="0"/>
-       <IsEnabledForAnnotations>true</IsEnabledForAnnotations>
-      </TimelineElement>
-      <TimelineElement Id="5">
-       <Time>2020-09-10T20:45:09.1405762Z</Time>
-       <Duration>0.4000</Duration>
-       <EventInformation>
-        <FocusAction>
-         <Action>DefiniteFocusStabilize</Action>
-         <Result>Success</Result>
-         <StartPosition>9470.319</StartPosition>
-         <ResultPosition>9469.212</ResultPosition>
-         <Quality>78</Quality>
-         <X>22371.221</X>
-         <Y>31974.51</Y>
-        </FocusAction>
-       </EventInformation>
-       <Bounds StartZ="64" StartT="0" StartS="2" StartB="0" StartM="0"/>
-       <IsEnabledForAnnotations>true</IsEnabledForAnnotations>
-      </TimelineElement>
-      <TimelineElement Id="6">
-       <Time>2020-09-10T20:45:26.0665762Z</Time>
-       <Duration>0.2413</Duration>
-       <EventInformation>
-        <FocusAction>
-         <Action>DefiniteFocusStabilize</Action>
-         <Result>Success</Result>
-         <StartPosition>9469.212</StartPosition>
-         <ResultPosition>9468.981</ResultPosition>
-         <Quality>80</Quality>
-         <X>22264.711</X>
-         <Y>31801.199</Y>
-        </FocusAction>
-       </EventInformation>
-       <Bounds StartZ="64" StartT="0" StartS="3" StartB="0" StartM="0"/>
-       <IsEnabledForAnnotations>true</IsEnabledForAnnotations>
-      </TimelineElement>
-     </TimelineElements>
-    </TimelineTrack>
    </TimelineTracks>
   </Information>
   <Scaling>
@@ -4198,7 +4093,7 @@
     <CameraName>Camera 1 (Back)</CameraName>
     <CameraAdapterMagnification>1.2</CameraAdapterMagnification>
     <CameraPixelDistance>13,13</CameraPixelDistance>
-    <CreationDateTime>09/10/2020 20:44:17</CreationDateTime>
+    <CreationDateTime>09/10/2020 20:25:18</CreationDateTime>
    </AutoScaling>
    <Items>
     <Distance Id="X">
@@ -4218,8 +4113,8 @@
   <DisplaySetting>
    <Channels>
     <Channel Id="Channel:0" Name="Bright_2">
-     <Low>0.062851199314402931</Low>
-     <High>0.095976927050536315</High>
+     <Low>0.054556623854773029</Low>
+     <High>0.077045662735071657</High>
      <BitCountRange>16</BitCountRange>
      <PixelType>Gray16</PixelType>
      <DyeName>TL Brightfield</DyeName>
@@ -4229,8 +4124,8 @@
      <OriginalColor>#FFFFFFFF</OriginalColor>
     </Channel>
     <Channel Id="Channel:1" Name="EGFP">
-     <Low>0.0052558552141937914</Low>
-     <High>0.01315739317943216</High>
+     <Low>0.0059856933382582255</Low>
+     <High>0.014651760631142669</High>
      <BitCountRange>16</BitCountRange>
      <PixelType>Gray16</PixelType>
      <DyeName>EGFP</DyeName>
